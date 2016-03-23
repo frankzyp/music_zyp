@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/music" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="50dp"
+            android:layout_height="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="歌手"
+            android:textSize="18sp" />
+
+        <com.example.music_zyp.marqueeText
+            android:id="@+id/textView2"
+            android:layout_width="60dp"
+            android:layout_height="23dp"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignParentBottom="true"
+            android:text="歌曲"
+            
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="69dp"/>
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
